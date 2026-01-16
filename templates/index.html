@@ -35,10 +35,10 @@
         <div class="detail-item">
           <span class="label">🚨 アレルギー </span>
           <p style="font-size: 0.8em; color: #d8000c; margin-bottom: 10px; font-weight: bold;">
-              ※当サイトはサンドイッチの特性上、小麦アレルギーの除外設定には対応しておりません。
+              ※当サイトはサンドイッチの特性上、小麦・乳製品アレルギーの除外設定には対応しておりません。
           </p>
           <div class="checkbox-group">
-            {% for item in ["卵","乳","大豆","えび","豚肉","鶏肉","牛肉","魚","ゼラチン","りんご","ごま","アルコール"] %}
+            {% for item in ["卵","大豆","えび","豚肉","鶏肉","牛肉","魚","ゼラチン","りんご","ごま","アルコール"] %}
             <label>
               <input type="checkbox" name="exclude" value="{{ item }}" onclick="dataLayer.push({'event': 'exclude_select', 'ingredient': '{{ item }}'});">
               {{ item }}
@@ -50,7 +50,7 @@
         <div class="detail-item">
           <span class="label">🥗 苦手なもの </span>
           <div class="checkbox-group">
-            {% for item in ["レタス","トマト","ピーマン","オニオン","オリーブ","ピクルス","ホットペッパー","マヨ"] %}
+            {% for item in ["ナチュラルチーズ","クリームタイプチーズ","マスカルポーネ","ベーコン","ツナ","アボカド","ハム","ドライソーセージ"] %}
             <label>
               <input type="checkbox" name="exclude" value="{{ item }}" onclick="dataLayer.push({'event': 'exclude_select', 'ingredient': '{{ item }}'});">
               {{ item }}
@@ -68,5 +68,6 @@
 </body>
 
 </html>
+
 
 
