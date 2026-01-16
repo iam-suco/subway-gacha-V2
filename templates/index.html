@@ -50,7 +50,7 @@
         <div class="detail-item">
           <span class="label">🥗 苦手なもの </span>
           <div class="checkbox-group">
-            {% for item in ["ナチュラルチーズ","クリームタイプチーズ","マスカルポーネ","ベーコン","ツナ","アボカド","ハム","ドライソーセージ"] %}
+            {% for item in ["レタス","トマト","ピーマン","オニオン","オリーブ","ピクルス","ホットペッパー","ナチュラルチーズ","クリームタイプチーズ","マスカルポーネ","ベーコン","ツナ","アボカド","ハム","ドライソーセージ"] %}
             <label>
               <input type="checkbox" name="exclude" value="{{ item }}" onclick="dataLayer.push({'event': 'exclude_select', 'ingredient': '{{ item }}'});">
               {{ item }}
@@ -68,6 +68,7 @@
 </body>
 
 </html>
+
 
 
 
